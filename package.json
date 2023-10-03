@@ -15,7 +15,7 @@
     }
   ],
   "license": "MIT",
-  "repository": "github:nicklegan/github-org-member-contribution-action",
+  "repository": "github:ikattur-ota/github-org-member-contribution-action",
   "engines": {
     "node": ">=14",
     "npm": ">=7"

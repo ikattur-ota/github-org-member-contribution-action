@@ -37,7 +37,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Get Member Contributions
-        uses: nicklegan/github-org-member-contribution-action@v1.1.1
+        uses: ikattur-ota/github-org-member-contribution-action@v1.1.1
         with:
           token: ${{ secrets.ORG_TOKEN }}
           fromdate: ${{ github.event.inputs.fromdate }} # Used for workflow dispatch input
