@@ -185,7 +185,7 @@ async function getMemberActivity(orgid, from, to, contribArray) {
     })
 
     // Prepare path/filename, repo/org context and commit name/email variables
-    const reportPath = `reports/${org}-${new Date().toISOString().substring(0, 19).replaceAll(':', '.') + 'Z'}-${fileDate}.csv`
+    const reportPath = `Reports/${org}-${new Date().toISOString().substring(0, 19).replaceAll(':', '.') + 'Z'}-${fileDate}.csv`
     const committerName = core.getInput('committer-name', {required: false}) || 'github-actions[bot]'
     const committerEmail = core.getInput('committer-email', {required: false}) || '41898282+github-actions[bot]@users.noreply.github.com'
     const {owner, repo} = github.context.repo
