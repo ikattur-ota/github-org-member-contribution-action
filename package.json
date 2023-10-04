@@ -1,21 +1,16 @@
 {
   "name": "github-org-member-contribution-action",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "description": "A GitHub Action to generate a report that contains member contribution data for a set interval belonging to a GitHub organization.",
-  "author": {
-    "name": "GitHub Professional Services",
-    "email": "services@github.com",
-    "url": "https://services.github.com"
-  },
+  "author": "GitHub Professional Services <services@github.com> (https://services.github.com)",
   "contributors": [
-    {
-      "name": "Nick Nagel",
-      "email": "nicklegan@github.com",
-      "url": "https://github.com/nicklegan"
-    }
+    "Nick Nagel <nicklegan@github.com> (https://github.com/nicklegan)"
   ],
   "license": "MIT",
-  "repository": "github:ikattur-ota/github-org-member-contribution-action",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikattur-ota/github-org-member-contribution-action.git"
+  },
   "engines": {
     "node": ">=14",
     "npm": ">=7"
@@ -25,11 +20,16 @@
     "build": "npx @vercel/ncc build index.js --out dist --license licenses.txt --quiet --minify"
   },
   "dependencies": {
-    "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0",
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^5.1.1",
     "@octokit/plugin-retry": "^3.0.9",
     "@octokit/plugin-throttling": "^3.5.2",
     "array-sort": "^1.0.0",
     "csv-stringify": "^5.6.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/ikattur-ota/github-org-member-contribution-action/issues"
+  },
+  "homepage": "https://github.com/ikattur-ota/github-org-member-contribution-action#readme",
+  "keywords": []
 }
