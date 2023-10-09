@@ -34,7 +34,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Get Member Contributions
         uses: ikattur-ota/github-org-member-contribution-action@v1.1.3
